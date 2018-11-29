@@ -133,7 +133,7 @@ class ListViewExample extends React.Component {
               borderBottom: '1px solid #F6F6F6',
             }}
           >{obj.title}</div>
-          <div style={{ display: 'flex', padding: '5px 0' }} 
+          <div style={{ display: 'flex', padding: '5px 0' }}
             onClick={()=>{
               console.log(obj.id)
               this.props.dispatch(routerRedux.push({
@@ -159,7 +159,7 @@ class ListViewExample extends React.Component {
         ref={el => this.lv = el}
         dataSource={this.state.dataSource}
         renderHeader={() => <span>{this.state.title}</span>}
-        renderFooter={() => (<div style={{ padding: 10, textAlign: 'center' }}>
+        renderFooter={() => (<div style={{ padding: 5, textAlign: 'center' }}>
           {this.state.isLoading ? 'Loading...' : 'Loaded'}
         </div>)}
         renderSectionHeader={sectionData => (
