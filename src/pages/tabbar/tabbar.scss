@@ -1,0 +1,17 @@
+/*@import 'antd-mobile@2/dist/antd-mobile.min.css';*/
+.am-tab-bar::-webkit-scrollbar {
+  display: none;
+}
+#tab-bar.demo {
+  display: flex;
+  flex-direction: row;
+}
+#tab-bar .demoName {
+  height: 30px;
+}
+#tab-bar .demo-preview-item .am-tab-bar {
+  background-color: red;
+}
+/*.am-tabs-tab-bar-wrap{
+  z-index: 99
+}*/

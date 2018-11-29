@@ -1,0 +1,21 @@
+{
+	"extraBabelPlugins": [
+		["import", {
+			"libraryName": "antd-mobile",
+			"libraryDirectory": "es",
+			"style": true
+		}]
+	],
+	"proxy": {
+		"/api": {
+				"target": "http://192.168.20.137:3115/",
+				"changeOrigin": true,
+				"pathRewrite": { "^/api" : "" }
+			  },
+			  "/api/v1/weather": {
+				"target": "https://api.seniverse.com/",
+				"changeOrigin": true,
+				"pathRewrite": { "^/api/v1/weather": "/v3/weather" }
+			  }
+	}
+}
