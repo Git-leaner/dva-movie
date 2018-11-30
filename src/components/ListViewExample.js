@@ -184,8 +184,4 @@ function mapStateToProps(state) {
   return state
 }
 
-<<<<<<< HEAD
 export default connect(mapStateToProps)(ListViewExample);
-=======
-export default connect(mapStateToProps)(ListViewExample);
->>>>>>> upd listview component
