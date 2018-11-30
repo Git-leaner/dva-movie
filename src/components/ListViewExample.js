@@ -133,7 +133,7 @@ class ListViewExample extends React.Component {
               borderBottom: '1px solid #F6F6F6',
             }}
           >{obj.title}</div>
-          <div style={{ display: 'flex', padding: '5px 0' }}
+          <div style={{ display: 'flex', padding: '5px 0' }} 
             onClick={()=>{
               console.log(obj.id)
               this.props.dispatch(routerRedux.push({
@@ -162,9 +162,15 @@ class ListViewExample extends React.Component {
         renderFooter={() => (<div style={{ padding: 5, textAlign: 'center' }}>
           {this.state.isLoading ? 'Loading...' : 'Loaded'}
         </div>)}
+<<<<<<< HEAD
         renderSectionHeader={sectionData => (
           <div style={{display: 'none'}}>{`Task ${sectionData.split(' ')[1]}`}</div>
         )}
+=======
+        // renderSectionHeader={sectionData => (
+        //   <div style={{height: '0px'}}>{`Task ${sectionData.split(' ')[1]}`}</div>
+        // )}
+>>>>>>> upd listview component
         renderRow={row}
         renderSeparator={separator}
         style={{
@@ -184,4 +190,8 @@ function mapStateToProps(state) {
   return state
 }
 
+<<<<<<< HEAD
 export default connect(mapStateToProps)(ListViewExample);
+=======
+export default connect(mapStateToProps)(ListViewExample);
+>>>>>>> upd listview component
