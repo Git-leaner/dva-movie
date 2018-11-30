@@ -162,15 +162,9 @@ class ListViewExample extends React.Component {
         renderFooter={() => (<div style={{ padding: 5, textAlign: 'center' }}>
           {this.state.isLoading ? 'Loading...' : 'Loaded'}
         </div>)}
-<<<<<<< HEAD
-        renderSectionHeader={sectionData => (
-          <div style={{display: 'none'}}>{`Task ${sectionData.split(' ')[1]}`}</div>
-        )}
-=======
         // renderSectionHeader={sectionData => (
         //   <div style={{height: '0px'}}>{`Task ${sectionData.split(' ')[1]}`}</div>
         // )}
->>>>>>> upd listview component
         renderRow={row}
         renderSeparator={separator}
         style={{
